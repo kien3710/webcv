@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+// * {
+//   background-color: rgb(143, 5, 5);
+// }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap");
+//vìdeo
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1111;
+}
+#vanta {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.container {
+  z-index: 111;
+  text-align: center;
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .header {
+    img {
+      position: absolute;
+      left: 50%;
+      top: -140px;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+  }
+  .title {
+    position: absolute;
+    background-color: red;
+    width: 80px;
+    border-radius: 30px;
+    left: 50%;
+    top: -30px;
+    color: white;
+    font-family: "Poppins";
+    transform: translateX(-50%);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(37, 37, 37);
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+
+    h3 {
+      padding: 2px;
+      font-size: 10px;
+    }
+  }
+  .list {
+    font-family: "Poppins";
+    ul {
+      cursor: pointer;
+
+      li {
+        width: 300px;
+        max-width: 200px;
+        border-radius: 30px;
+        border: none;
+        padding: 3px;
+        list-style: none;
+        background-color: #fffa;
+
+        backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+
+        margin: 15px;
+        h1 {
+          padding-left: 5px;
+          font-size: 15px;
+          z-index: 44444;
+          color: rgb(3, 3, 3);
+        }
+
+        &:hover {
+          transition: all 0.5s ease;
+          transform: scale(1.1);
+        }
+        a {
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+}

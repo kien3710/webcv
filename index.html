@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css" />
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source type="video/mp4" src="./img/bg.mp4" />
+      <source type="video/webm" src="#" />
+    </video>
+    <div id="vanta"></div>
+    <div class="container">
+      <div class="header">
+        <a href="#"
+          ><img
+            src="./img/277116205_1724411681223886_6533444184023678357_n.jpg"
+            alt=""
+        /></a>
+        <div class="title">
+          <h3>kien3710@</h3>
+        </div>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100009652117183"
+              ><h1>
+                <i
+                  style="color: rgb(3, 23, 233)"
+                  class="fa-brands fa-facebook"
+                ></i
+                >Facebook
+              </h1></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><h1>
+                <i
+                  style="color: rgb(251, 0, 167)"
+                  class="fa-brands fa-instagram"
+                ></i
+                >Intagram
+              </h1></a
+            >
+          </li>
+          <li>
+            <h1>
+              <i
+                style="color: rgb(48, 142, 48)"
+                class="fa-solid fa-phone-volume"
+              ></i
+              >Phone
+            </h1>
+          </li>
+          <li>
+            <h1>
+              <i
+                style="color: rgb(0, 162, 255)"
+                class="fa-brands fa-linkedin"
+              ></i
+              >Linkedin
+            </h1>
+          </li>
+          <li>
+            <h1>
+              <i
+                style="color: rgb(0, 149, 255)"
+                class="fa-brands fa-bitcoin"
+              ></i
+              >Zalo
+            </h1>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        quantity: 3.0,
+        backgroundAlpha: 0.0,
+      });
+    </script>
+  </body>
+</html>

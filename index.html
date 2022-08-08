@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css" />
   </head>
   <body>
-    <video autoplay loop muted>
+    <video class="light" autoplay muted>
       <source type="video/mp4" src="./img/bg.mp4" />
+      <source type="video/webm" src="#" />
+    </video>
+    <video class="night" autoplay muted>
+      <source type="video/mp4" src="./img/bgnight.mp4" />
       <source type="video/webm" src="#" />
     </video>
     <div id="vanta"></div>
@@ -79,6 +83,14 @@
         </ul>
       </div>
     </div>
+
+    <div class="btn"></div>
+    <label for="">
+      <i id="moon" class="fa-solid fa-moon"></i>
+      <i id="sun" class="fa-solid fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
@@ -95,5 +107,6 @@
         backgroundAlpha: 0.0,
       });
     </script>
+    <script src="/app.js"></script>
   </body>
 </html>

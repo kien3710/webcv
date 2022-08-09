@@ -177,10 +177,16 @@ label .fa-sun {
 label .ball {
   width: 23px;
   height: 23px;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   border-radius: 50%;
+}
+
+.turn-on {
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */

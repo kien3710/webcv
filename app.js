@@ -13,5 +13,14 @@ btn.addEventListener("click", function () {
 const itBall = document.querySelector(".ball");
 
 itBall.addEventListener("click", function () {
-  document.transfrom = "translateY(-50px)";
+  itBall.classList.toggle("turn-on");
+  playLight.classList.toggle("hidden");
 });
+
+// itBall.addEventListener("click", function () {
+//   if (itBall == "on") {
+//     itBall.classList.toggle("turn-on");
+//   } else {
+//     itBall.style.right = "0";
+//   }
+// });
